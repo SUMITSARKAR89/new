@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+   }
+ .container{
+     background-color: #e49c9c;
+     padding:15px;
+     border:1px solid black;
+     border-radius: 10px;
+     margin: 0;
+ }
+ .container:hover{
+     background-color: rgb(252, 220, 173);
+ }
+ .col-30{
+     float:left;
+     width: 30%;
+     margin-top: 10px;
+     font-size: large;
+ }
+ .col-70{
+     float: left;
+     width: 70%;
+     margin-top: 10px;
+     font-size: large;
+ }
+ label{
+     padding: 10px;
+     display: inline-block;
+ }
+ input[type=submit] {
+     background-color: rgb(10, 182, 61);
+     border:none;
+     padding: 15px 12px ;
+     color: antiquewhite;
+     font-size: 15px;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+ input[type=submit]:hover{
+     background-color: rgb(27, 121, 56);
+ }
+ input[type=text], select, textarea{
+     width: 100%;
+     padding: 12px;
+     border-radius: 10px;
+     border:1px solid #ccc;
+     resize: vertical;
+     
+ }
+ /* Clear floats after the columns */
+ .row::after {
+  content: "";
+  display: table;
+   clear: both;
+ }
+ @media screen and (max-width:600px) {
+     .col-30, .col-70, input[type=submit]{
+         width: 100%;
+         margin-top: 0;
+
+     }
+     
+ }

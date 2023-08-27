@@ -1,63 +1,112 @@
+
 *{
     box-sizing: border-box;
-   }
- .container{
-     background-color: #e49c9c;
-     padding:15px;
-     border:1px solid black;
-     border-radius: 10px;
-     margin: 0;
- }
- .container:hover{
-     background-color: rgb(252, 220, 173);
- }
- .col-30{
-     float:left;
-     width: 30%;
-     margin-top: 10px;
-     font-size: large;
- }
- .col-70{
-     float: left;
-     width: 70%;
-     margin-top: 10px;
-     font-size: large;
- }
- label{
-     padding: 10px;
-     display: inline-block;
- }
- input[type=submit] {
-     background-color: rgb(10, 182, 61);
-     border:none;
-     padding: 15px 12px ;
-     color: antiquewhite;
-     font-size: 15px;
-     border-radius: 4px;
-     cursor: pointer;
- }
- input[type=submit]:hover{
-     background-color: rgb(27, 121, 56);
- }
- input[type=text], select, textarea{
-     width: 100%;
-     padding: 12px;
-     border-radius: 10px;
-     border:1px solid #ccc;
-     resize: vertical;
-     
- }
- /* Clear floats after the columns */
- .row::after {
-  content: "";
-  display: table;
-   clear: both;
- }
- @media screen and (max-width:600px) {
-     .col-30, .col-70, input[type=submit]{
-         width: 100%;
-         margin-top: 0;
+}
+body{
+    font-family: 'Dancing Script', cursive;
+    margin: 1px;;
+    font-size: large;
+    background:linear-gradient( rgba(230, 179, 143, 0.486), rgba(226, 225, 132, 0.849));
+    
+    
+    
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.navbar{
+    overflow: hidden;
+  background-color: #6d6a46ce;
+  padding: 8px 10px;
+  border-radius: 8px;
+  position: sticky;
+  top: 0;
+}
+    
 
-     }
-     
- }
+
+.navbar a{
+    float: left;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 22px;
+}
+.navbar a:hover{
+    background-color: rgb(100, 100, 40);
+    border-radius: 5px;
+    border:1px solid rgb(207, 207, 108);
+    color: white;
+    
+    
+}
+.header{
+    color:rgb(13, 13, 228);
+    text-align: center;
+    padding: 10px;
+    font-size: larger;
+    background: #d9faba;
+    border-radius: 12px;
+}
+
+.footer{
+    color:rgb(4, 4, 97);
+    text-align: center;
+    padding: 1px;
+    background: #ddd;
+    border-radius: 12px;
+    border:10px;
+    font-size: small ;
+    font-weight: bold;
+}
+h2{
+    color: rgb(25, 25, 233);
+}
+p strong{
+    color: rgb(6, 160, 114);
+    font-weight: bolder;
+}
+p.line{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    font-size: larger;
+    color: rgba(218, 69, 23, 0.986);
+
+}
+.leftcolumn{
+    margin:2px;
+    float: left;
+    width: 1210px;
+    border: 2px solid black; 
+    
+}
+.rightcolumn{
+    margin:2px;
+    float: right;
+    width:555px;
+    border: 2px solid black;
+    padding:5px;
+}
+
+.card{
+    padding: 2px;
+    margin:0;
+    background-color: rgb(216, 218, 184);
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+    
+  
+  
